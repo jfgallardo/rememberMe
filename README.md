@@ -31,7 +31,9 @@ npm run dev
 
 ## Imágenes
 
-!(/resources/images/login.png)
+![login](https://user-images.githubusercontent.com/37257742/170623645-9f36cb9b-2811-4c7b-b38d-83df95aa7536.png)
+
+![register](https://user-images.githubusercontent.com/37257742/170623682-98033b10-677a-4da2-88ed-6e7d1716ca67.png)
 
 
 ## License
