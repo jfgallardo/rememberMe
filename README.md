@@ -1,35 +1,51 @@
-## Sobre Remember-Me
+# 💼 Remember-Me - Gestión de Tareas 📧
 
-Aplicación desarollada con el fin de poder crear tareas y notificar al usuario mediante correo electrónico sobre las mismas.
+## 📌 Descripción
+Aplicación desarrollada para gestionar tareas y notificar al usuario mediante correo electrónico sobre ellas. Utiliza **Laravel** para la parte backend y **Vue.js** en el frontend.
 
+## 🚀 Características
+- 📧 Envío de correos utilizando **Jobs**.
+- 🗓️ Programación de tareas diarias para el envío de notificaciones.
 
-## Características
+## 🛠️ Tecnologías utilizadas
+- **Laravel** - Framework PHP para el backend.
+- **Vue.js** - Framework para la interfaz de usuario.
+- **Jobs** - Para el envío programado de correos electrónicos.
 
-- Envio de correo haciendo usos de Jobs.
-- Programación de tareas diarias para el envio de notificaciones.
+## ⚙️ Instalación y configuración
 
+### 📝 Instalación de dependencias
+1. Instala las dependencias de backend:
+   ```sh
+   composer install
+   ```
+2. Navega a la carpeta del frontend y instala las dependencias de Vue.js:
+   ```sh
+   cd vue
+   npm install
+   ```
 
-## Instalación
+### 🛠️ Despliegue de la base de datos
+1. Crea las tablas necesarias para las colas:
+   ```sh
+   php artisan queue:table
+   ```
+2. Ejecuta las migraciones:
+   ```sh
+   php artisan migrate
+   ```
 
-### Instalación de dependencias
-```
-composer install
-cd vue
-npm install
-```
-### Despliegue de BD
-```
-php artisan queue:table
-php artisan migrate
+### ▶️ Iniciar el servidor
+1. Inicia el servidor de **Laravel**:
+   ```sh
+   php artisan serve
+   ```
+2. Inicia el servidor de **Vue.js**:
+   ```sh
+   npm run dev
+   ```
 
-```
-### Iniciar servidor
-```
-php artisan serve
-npm run dev
-```
-
-## Imágenes
+## 🖼️ Imágenes
 
 ![login](https://user-images.githubusercontent.com/37257742/170623645-9f36cb9b-2811-4c7b-b38d-83df95aa7536.png)
 
@@ -37,6 +53,6 @@ npm run dev
 
 ![app](https://user-images.githubusercontent.com/37257742/170624244-3f825dad-a589-47d0-85a9-4e984c03df1c.png)
 
-## License
+## 📜 Licencia
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+El framework **Laravel** es un software de código abierto con licencia bajo la [licencia MIT](https://opensource.org/licenses/MIT).
